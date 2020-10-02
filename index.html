@@ -1,0 +1,130 @@
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+    google.load("jquery", "1.3.2");
+</script>
+
+<html>
+
+<head>
+    <title>Action Concept Grounding for Semantically Consistent Counterfactual Video Generation</title>
+    <meta property="og:title"
+        content="Action Concept Grounding for Semantically Consistent Counterfactual Video Generation" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br>
+    <center>
+        <span style="font-size:32px">Action Concept Grounding for Semantically Consistent Counterfactual Video
+            Generation</span>
+        <br><br>
+        <span style="font-size:22px">Preprint. Under review.</span>
+        <br><br><br>
+        <table align=center>
+            <tr>
+                <span style="font-size:22px"><a href="">Authors Anonymous.</a></span> &nbsp;
+            </tr>
+        </table>
+        <br><br>
+
+        <table align=center>
+            <tr>
+                <td align=center>
+                    <center>
+                        <span style="font-size:22px"><a href=""> [Paper]</a></span>
+                    </center>
+                </td>
+                <td align=center>
+                    <center>
+                        <span style="font-size:22px"><a href=""> [GitHub]</a></span>
+                    </center>
+                </td>
+                <td align=center>
+                    <center>
+                        <span style="font-size:22px"><a href=""> [Bibtex]</a></span>
+                    </center>
+                </td>
+            </tr>
+        </table>
+        <br> <br>
+        <hr>
+        <table align=center width=950px>
+            <center>
+                <h1>Abstract</h1>
+            </center>
+            <tr>
+                Recent works in self-supervised video prediction have mainly focused on passiveforecasting and
+                action-conditional prediction with short-horizon low-level actions,which sidestep the problem of
+                semantic learning. We introduce the task of semanticaction-conditional video prediction, which can be
+                regarded as an inverse problemof action recognition. The challenge of this new task primarily lies in
+                how toeffectively inform the model of semantic action information. To bridge visionand language, we
+                utilize the idea of capsule and propose a novel video predictionmodel called ACGN, an abbreviation
+                forActionConceptGroundingNetwork. Ourmethod is evaluated on two newly designed synthetic datasets,
+                CLEVR-Building-Blocks and Sapien-Kitchen, and experiments show that given different action labels,our
+                ACGN can correctly condition on instructions and generate correspondingfuture frames without need of
+                bounding boxes. We further demonstrate our trainedmodel can make out-of-distribution predictions for
+                concurrent actions, be quicklyadapted to new categories and exploit its learnt features for object
+                detection.
+                <br>
+            </tr>
+        </table>
+
+        <br> <br>
+        <hr>
+        <table align=center width=950px>
+            <center>
+                <h1>
+                    Action Concept Grounding Network
+                </h1>
+            </center>
+            <tr>
+                <br>
+                <img style="width:950px" src="data/arch3.jpg">
+                <br>
+            </tr>
+        </table>
+
+        <br> <br>
+        <hr>
+        <table align=center width=950px>
+            <center>
+                <h1>
+                    Quantitative Results
+                </h1>
+            </center>
+            <tr>
+                <br>
+                <img style="width:950px" src="data/quant.png">
+                <br>
+            </tr>
+        </table>
+
+        <br> <br>
+        <hr>
+        <table align=center width=950px>
+            <center>
+                <h1>
+                    Resulting Generations
+                </h1>
+            </center>
+            <tr>
+                <br>
+                <img style="width:950px" src="data/F4.jpg">
+                <br>
+            </tr>
+        </table>
+
+        <br> <br>
+        <hr>
+        <table align=center width=950px>
+            <center>
+                <h1>
+                    Acknowledgements
+                </h1>
+            </center>
+            <tr>
+                To be added after review period.
+            </tr>
+        </table>
+
+</html>
