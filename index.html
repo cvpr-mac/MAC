@@ -8,17 +8,16 @@
 <html>
 
 <head>
-    <title>Action Concept Grounding for Semantically Consistent Counterfactual Video Generation</title>
+    <title>Action Concept Grounding Network for Semantically-Consistent Video Generation</title>
     <meta property="og:title"
-        content="Action Concept Grounding for Semantically Consistent Counterfactual Video Generation" />
+        content="Action Concept Grounding Network for Semantically-Consistent Video Generation" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <br>
     <center>
-        <span style="font-size:32px">Action Concept Grounding for Semantically Consistent Counterfactual Video
-            Generation</span>
+        <span style="font-size:32px">Action Concept Grounding Network for Semantically-Consistent Video Generation</span>
         <br><br>
         <span style="font-size:22px">Preprint. Under review.</span>
         <br><br><br>
@@ -55,28 +54,37 @@
                 <h1>Abstract</h1>
             </center>
             <tr>
-                Recent works in self-supervised video prediction have mainly focused on passiveforecasting and
-                action-conditional prediction with short-horizon low-level actions,which sidestep the problem of
-                semantic learning. We introduce the task of semanticaction-conditional video prediction, which can be
-                regarded as an inverse problemof action recognition. The challenge of this new task primarily lies in
-                how toeffectively inform the model of semantic action information. To bridge visionand language, we
-                utilize the idea of capsule and propose a novel video predictionmodel called ACGN, an abbreviation
-                forActionConceptGroundingNetwork. Ourmethod is evaluated on two newly designed synthetic datasets,
-                CLEVR-Building-Blocks and Sapien-Kitchen, and experiments show that given different action labels,our
-                ACGN can correctly condition on instructions and generate correspondingfuture frames without need of
-                bounding boxes. We further demonstrate our trainedmodel can make out-of-distribution predictions for
-                concurrent actions, be quicklyadapted to new categories and exploit its learnt features for object
-                detection.
+                Recent works in self-supervised video prediction have mainly focused on passive forecasting and low-level action-conditional prediction, which sidesteps the problem of semantic learning. We introduce the task of semantic action-conditional video prediction, which can be regarded as an inverse problem of action recognition. The challenge of this new task primarily lies in how to effectively inform the model of semantic action information. To bridge vision and language, we utilize the idea of capsule and propose a novel video prediction model Action Concept Grounding Network (ACGN). Our method is evaluated on two newly designed synthetic datasets, CLEVR-Building-Blocks and Sapien-Kitchen, and experiments show that given different action labels, our ACGN can correctly condition on instructions and generate corresponding future frames without need of bounding boxes. We further demonstrate our trained model can make out-of-distribution predictions for concurrent actions, be quickly adapted to new object categories and exploit its learnt features for object detection.
                 <br>
             </tr>
         </table>
 
         <br> <br>
         <hr>
+	<table align=center width=950px>
+            <center>
+                <h1>
+                    New  task: &nbsp&nbspSemantic  Action-conditional  Video  Prediction
+                </h1>
+            </center>
+            <tr>
+                <br>
+                <img style="width:600px" src="data/task_a.gif">
+                <br>
+            </tr>
+	    <tr>
+                <br>
+                <img style="width:220px" src="data/task_h.gif">
+                <br>
+            </tr>
+        </table>
+	<br> <br>
+        <hr>
+
         <table align=center width=950px>
             <center>
                 <h1>
-                    Action Concept Grounding Network
+                    Our Solution: Action Concept Grounding Network (ACGN)
                 </h1>
             </center>
             <tr>
@@ -88,10 +96,56 @@
 
         <br> <br>
         <hr>
+
+	<table align=center width=1250px>
+            <center>
+                <h1>
+                    Qualitative Results on CLEVR-Building-blocks
+                </h1>
+            </center>
+            <div class="image123">
+		    <div style="float:left;margin-right:15px;">
+			<img src="data/clevr1.gif" height="900" width="450"  />
+			<p style="text-align:center;">Ground truth &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Predictions </p>
+		    </div>
+
+		    <div style="float:right;margin-right:15px;">
+			<img src="data/clevr2.gif" height="900" width="450" />
+			<p style="text-align:center;">Ground truth &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Predictions</p>
+		    </div>
+	     </div>
+
+        </table>
+	<br> <br>
+        <hr>
+
+
+
+	<table align=center width=1250px>
+            <center>
+                <h1>
+                    Qualitative Results on Sapien-Kitchen
+                </h1>
+            </center>
+            <div class="image123">
+		    <div style="float:left;margin-right:15px;">
+			<img src="data/sapien2.gif" height="900" width="450"  />
+			<p style="text-align:center;">Ground truth &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Predictions </p>
+		    </div>
+
+		    <div style="float:right;margin-right:15px;">
+			<img src="data/sapien1.gif" height="900" width="450" />
+			<p style="text-align:center;">Ground truth &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Predictions</p>
+		    </div>
+	     </div>
+
+        </table>
+	<br> <br>
+        <hr>
         <table align=center width=950px>
             <center>
                 <h1>
-                    Quantitative Results
+                    Quantitative Comparison
                 </h1>
             </center>
             <tr>
@@ -100,18 +154,19 @@
                 <br>
             </tr>
         </table>
-
+	
         <br> <br>
         <hr>
         <table align=center width=950px>
             <center>
                 <h1>
-                    Resulting Generations
+                    Counterfactual Generations
                 </h1>
             </center>
             <tr>
                 <br>
-                <img style="width:950px" src="data/F4.jpg">
+                <img style="width:950px" src="data/cg1.jpg">
+		<img style="width:950px" src="data/cg2.jpg">
                 <br>
             </tr>
         </table>
