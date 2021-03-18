@@ -8,9 +8,9 @@
 <html>
 
 <head>
-    <title>Action Concept Grounding Network for Semantically-Consistent Video Generation</title>
+    <title>Concept Grounding with Modular Action-Capsules in Semantic Video Prediction</title>
     <meta property="og:title"
-        content="Action Concept Grounding Network for Semantically-Consistent Video Generation" />
+        content="Concept Grounding with Modular Action-Capsules in Semantic Video Prediction" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -54,8 +54,7 @@
                 <h1>Abstract</h1>
             </center>
             <tr>
-                Recent works in self-supervised video prediction have mainly focused on passive forecasting and low-level action-conditional prediction, which sidesteps the problem of semantic learning. We introduce the task of semantic action-conditional video prediction, which can be regarded as an inverse problem of action recognition. The challenge of this new task primarily lies in how to effectively inform the model of semantic action information. To bridge vision and language, we utilize the idea of capsule and propose a novel video prediction model Action Concept Grounding Network (ACGN). Our method is evaluated on two newly designed synthetic datasets, CLEVR-Building-Blocks and Sapien-Kitchen, and experiments show that given different action labels, our ACGN can correctly condition on instructions and generate corresponding future frames without need of bounding boxes. We further demonstrate our trained model can make out-of-distribution predictions for concurrent actions, be quickly adapted to new object categories and exploit its learnt features for object detection.
-                <br>
+		Recent works in video prediction have mainly focused on passive forecasting and low-level action-conditional prediction, which sidesteps the learning of interaction between agents and objects. We introduce the task of semantic action-conditional video prediction, which uses semantic action labels to describe those interactions and can be regarded as an inverse problem of action recognition. The challenge of this new task primarily lies in how to effectively inform the model of semantic action information. To bridge vision and language, we utilize the idea of capsule and propose a novel video prediction model, Modular Action CapsuleNetwork (MAC). Our method is evaluated on two newly designed synthetic datasets, CLEVR-Building-Blocks and Sapien-Kitchen, and one real-world dataset called TowerCreation. Experiments show that given different action labels, MAC can correctly condition on instructions and generate corresponding future frames without need of bounding boxes. We further demonstrate the trained model canmake out-of-distribution generalization, be quickly adapted to new object categories and exploit its learnt features for object detection, showing the progression towards higher-level cognitive abilities.                 <br>
             </tr>
         </table>
 
@@ -84,7 +83,7 @@
         <table align=center width=950px>
             <center>
                 <h1>
-                    Our Solution: Action Concept Grounding Network (ACGN)
+                    Our Solution: Modular Action Capsule Network (MAC)
                 </h1>
             </center>
             <tr>
