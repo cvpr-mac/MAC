@@ -17,67 +17,63 @@
 <body>
     <br>
     <center>
-        <span style="font-size:32px">Concept Grounding with Modular Action-Capsules in Semantic Video Prediction</span>
+        <span style="font-size:46px">Concept Grounding with Modular Action-Capsules in Semantic Video Prediction</span>
         <br><br>
-        <span style="font-size:22px">Preprint. Under review.</span>
-        <br><br><br>
+        <span style="font-size:20px">Preprint. Under review.</span>
+        <br><br>
         <table align=center>
             <tr>
-                <span style="font-size:22px"><a href="">Authors Anonymous.</a></span> &nbsp;
+                <span style="font-size:20px"><a href="">Authors Anonymous.</a></span> &nbsp;
             </tr>
         </table>
-        <br><br>
+        
 
         <table align=center>
             <tr>
                 <td align=center>
                     <center>
-                        <span style="font-size:22px"><a href=""> [Paper]</a></span>
+                        <span style="font-size:18px"><a href=""> [Paper]</a></span>
                     </center>
                 </td>
                 <td align=center>
                     <center>
-                        <span style="font-size:22px"><a href=""> [GitHub]</a></span>
+                        <span style="font-size:18px"><a href=""> [Code](coming soon)</a></span>
                     </center>
                 </td>
                 <td align=center>
                     <center>
-                        <span style="font-size:22px"><a href=""> [Bibtex]</a></span>
+                        <span style="font-size:18px"><a href=""> [Bibtex]</a></span>
                     </center>
                 </td>
             </tr>
         </table>
-        <br> <br>
+    	
         <hr>
-        <table align=center width=950px>
+
+
+	<h1>Video Overview</h1>
+    	<video width="720" height="450" controls="controls">
+
+      	<source src="video_overview.mp4" type=video/mp4>
+    	</video>
+	
+
+    	
+ 
+
+
+	<table align=center width=1150px>
             <center>
-                <h1>Abstract</h1>
+
             </center>
             <tr>
-		Recent works in video prediction have mainly focused on passive forecasting and low-level action-conditional prediction, which sidesteps the learning of interaction between agents and objects. We introduce the task of semantic action-conditional video prediction, which uses semantic action labels to describe those interactions and can be regarded as an inverse problem of action recognition. The challenge of this new task primarily lies in how to effectively inform the model of semantic action information. To bridge vision and language, we utilize the idea of capsule and propose a novel video prediction model, Modular Action CapsuleNetwork (MAC). Our method is evaluated on two newly designed synthetic datasets, CLEVR-Building-Blocks and Sapien-Kitchen, and one real-world dataset called TowerCreation. Experiments show that given different action labels, MAC can correctly condition on instructions and generate corresponding future frames without need of bounding boxes. We further demonstrate the trained model canmake out-of-distribution generalization, be quickly adapted to new object categories and exploit its learnt features for object detection, showing the progression towards higher-level cognitive abilities.                 <br>
+                <br>
+                <img style="width:1150px" src="data/newtask.gif">
+                <br>
+
             </tr>
         </table>
 
-        <br> <br>
-        <hr>
-	<table align=center width=950px>
-            <center>
-                <h1>
-                    New  task: &nbsp&nbspSemantic  Action-conditional  Video  Prediction
-                </h1>
-            </center>
-            <tr>
-                <br>
-                <img style="width:600px" src="data/task_a.gif">
-                <br>
-            </tr>
-	    <tr>
-                <br>
-                <img style="width:220px" src="data/task_h.gif">
-                <br>
-            </tr>
-        </table>
-	<br> <br>
         <hr>
 
         <table align=center width=950px>
@@ -88,12 +84,35 @@
             </center>
             <tr>
                 <br>
-                <img style="width:950px" src="data/arch3.jpg">
+                <img style="width:1150px" src="data/arch.gif">
                 <br>
             </tr>
         </table>
 
         <br> <br>
+        <hr>
+	
+
+	<table align=center width=1250px>
+            <center>
+                <h1>
+                    Qualitative Results on TowerCreation
+                </h1>
+            </center>
+            <div class="image123">
+		    <div style="float:left;margin-right:15px;">
+			<img src="data/1.gif" height="360" width="480"  />
+			<p style="text-align:left;">&nbspGroundtruth &nbsp&nbsp&nbsp&nbsp Best sample &nbsp&nbsp&nbsp&nbsp&nbsp Sample 1  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sample 2&nbsp&nbsp</p>
+		    </div>
+
+		    <div style="float:right;margin-right:15px;">
+			<img src="data/2.gif" height="360" width="480" />
+			<p style="text-align:left;">&nbspGroundtruth &nbsp&nbsp&nbsp&nbsp Best sample &nbsp&nbsp&nbsp&nbsp&nbsp Sample 1  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Sample 2&nbsp&nbsp</p>
+   			 </div>
+	     </div>
+
+        </table>
+	<br> <br>
         <hr>
 
 	<table align=center width=1250px>
@@ -159,7 +178,7 @@
         <table align=center width=950px>
             <center>
                 <h1>
-                    Counterfactual Generations
+                    Counterfactual Generation with displayed labels
                 </h1>
             </center>
             <tr>
@@ -184,3 +203,4 @@
         </table>
 
 </html>
+
